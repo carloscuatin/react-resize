@@ -1,0 +1,26 @@
+{
+  "name": "react-resize",
+  "version": "1.0.0",
+  "description": "Screen complete and resizable for ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicArtz/react-resize.git"
+  },
+  "keywords": [
+    "reactjs",
+    "react",
+    "resizable",
+    "screen",
+    "complete"
+  ],
+  "author": "Carlos Cuatin <cecg1996@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagicArtz/react-resize/issues"
+  },
+  "homepage": "https://github.com/MagicArtz/react-resize#readme"
+}
