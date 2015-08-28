@@ -1,14 +1,16 @@
 {
   "name": "react-resize",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "description": "Screen complete and resizable for ReactJS",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "rimraf dist && babel src --out-dir dist --ignore \"__tests__\"",
+    "lint": "eslint src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MagicArtz/react-resize.git"
+    "url": "git+https://github.com/carloscuatin/react-resize.git"
   },
   "keywords": [
     "reactjs",
@@ -20,7 +22,12 @@
   "author": "Carlos Cuatin <cecg1996@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MagicArtz/react-resize/issues"
+    "url": "https://github.com/carloscautin/react-resize/issues"
   },
-  "homepage": "https://github.com/MagicArtz/react-resize#readme"
+  "homepage": "https://github.com/carloscuatin/react-resize#readme",
+  "devDependencies": {
+    "react": "^0.13.3",
+    "babel": "^5.8.21",
+    "babel-eslint": "^4.1.0"
+  }
 }
