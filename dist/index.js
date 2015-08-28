@@ -14,17 +14,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var _reactAddons = require('react/addons');
+var _react = require('react');
 
-var _reactAddons2 = _interopRequireDefault(_reactAddons);
+var _react2 = _interopRequireDefault(_react);
 
-var FullScreen = (function (_React$Component) {
-  _inherits(FullScreen, _React$Component);
+var Resize = (function (_React$Component) {
+  _inherits(Resize, _React$Component);
 
-  function FullScreen(props) {
-    _classCallCheck(this, FullScreen);
+  function Resize(props) {
+    _classCallCheck(this, Resize);
 
-    _get(Object.getPrototypeOf(FullScreen.prototype), 'constructor', this).call(this, props);
+    _get(Object.getPrototypeOf(Resize.prototype), 'constructor', this).call(this, props);
     this.state = {
       width: window.innerWidth,
       height: window.innerHeight
@@ -33,7 +33,7 @@ var FullScreen = (function (_React$Component) {
     this.handleResize = this.handleResize.bind(this);
   }
 
-  _createClass(FullScreen, [{
+  _createClass(Resize, [{
     key: 'handleResize',
     value: function handleResize() {
       this.setState({
@@ -54,10 +54,10 @@ var FullScreen = (function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var children = _reactAddons2['default'].Children.map(this.props.children, function (child) {
+      var children = _react2['default'].Children.map(this.props.children, function (child) {
         return { child: child };
       });
-      return _reactAddons2['default'].createElement(
+      return _react2['default'].createElement(
         'div',
         { style: { width: this.state.width, height: this.state.height } },
         children
@@ -65,8 +65,8 @@ var FullScreen = (function (_React$Component) {
     }
   }]);
 
-  return FullScreen;
-})(_reactAddons2['default'].Component);
+  return Resize;
+})(_react2['default'].Component);
 
-exports['default'] = FullScreen;
+exports['default'] = Resize;
 module.exports = exports['default'];

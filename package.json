@@ -1,11 +1,10 @@
 {
   "name": "react-resize",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Screen complete and resizable for ReactJS",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && babel src --out-dir dist --ignore \"__tests__\"",
-    "lint": "eslint src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

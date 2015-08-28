@@ -1,6 +1,6 @@
-import React from 'react/addons';
+import React from 'react';
 
-export default class FullScreen extends React.Component {
+export default class Resize extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
