@@ -7,6 +7,8 @@ export default class FullScreen extends React.Component {
     	width: window.innerWidth,
   		height: window.innerHeight
     }
+
+    this.handleResize = this.handleResize.bind(this);
   }
 
   handleResize() {
@@ -16,7 +18,7 @@ export default class FullScreen extends React.Component {
     });
   }
 
-  componentWillMount() {
+  componentDidMount() {
   	window.addEventListener('resize', this.handleResize);
   }
 

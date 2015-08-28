@@ -29,6 +29,8 @@ var FullScreen = (function (_React$Component) {
       width: window.innerWidth,
       height: window.innerHeight
     };
+
+    this.handleResize = this.handleResize.bind(this);
   }
 
   _createClass(FullScreen, [{
@@ -40,8 +42,8 @@ var FullScreen = (function (_React$Component) {
       });
     }
   }, {
-    key: 'componentWillMount',
-    value: function componentWillMount() {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
       window.addEventListener('resize', this.handleResize);
     }
   }, {

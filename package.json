@@ -27,7 +27,6 @@
   "homepage": "https://github.com/carloscuatin/react-resize#readme",
   "devDependencies": {
     "react": "^0.13.3",
-    "babel": "^5.8.21",
-    "babel-eslint": "^4.1.0"
+    "babel": "^5.8.21"
   }
 }
