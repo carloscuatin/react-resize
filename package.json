@@ -1,6 +1,6 @@
 {
   "name": "react-resize",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Screen complete and resizable for ReactJS",
   "main": "dist/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "author": "Carlos Cuatin <cecg1996@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/carloscautin/react-resize/issues"
+    "url": "https://github.com/carloscuatin/react-resize/issues"
   },
   "homepage": "https://github.com/carloscuatin/react-resize#readme",
   "devDependencies": {
