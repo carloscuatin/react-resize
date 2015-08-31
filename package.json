@@ -1,6 +1,6 @@
 {
   "name": "react-resize",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Screen complete and resizable for ReactJS",
   "main": "dist/index.js",
   "scripts": {
