@@ -26,7 +26,6 @@ var Resize = (function (_React$Component) {
 
     _get(Object.getPrototypeOf(Resize.prototype), 'constructor', this).call(this, props);
     this.state = {
-      width: window.innerWidth,
       height: window.innerHeight
     };
 
@@ -37,7 +36,6 @@ var Resize = (function (_React$Component) {
     key: 'handleResize',
     value: function handleResize() {
       this.setState({
-        width: window.innerWidth,
         height: window.innerHeight
       });
     }
@@ -59,7 +57,7 @@ var Resize = (function (_React$Component) {
       });
       return _react2['default'].createElement(
         'div',
-        { style: { width: this.state.width, height: this.state.height } },
+        { style: { height: this.state.height } },
         children
       );
     }
