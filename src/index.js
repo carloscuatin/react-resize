@@ -4,6 +4,7 @@ export default class Resize extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      width: window.innerWidth,
   		height: window.innerHeight
     }
 
@@ -12,6 +13,7 @@ export default class Resize extends React.Component {
 
   handleResize() {
     this.setState({
+      width: window.innerWidth,
   		height: window.innerHeight
     });
   }
@@ -31,7 +33,7 @@ export default class Resize extends React.Component {
         return {child};
       }
     );
-    return <div style={{height: this.state.height}}>{children}</div>;
+    return <div style={{height: this.state.height, width: this.state.width}}>{children}</div>;
   }
 
 }
