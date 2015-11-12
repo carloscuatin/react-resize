@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default class Resize extends React.Component {
-  constructor(props) {
-    super(props);
+class Resize extends React.Component {
+  constructor() {
+    super();
     this.state = {
       width: window.innerWidth,
-  		height: window.innerHeight
+      height: window.innerHeight
     }
 
     this.handleResize = this.handleResize.bind(this);
@@ -14,12 +14,12 @@ export default class Resize extends React.Component {
   handleResize() {
     this.setState({
       width: window.innerWidth,
-  		height: window.innerHeight
-    });
+      height: window.innerHeight
+    })
   }
 
   componentDidMount() {
-  	window.addEventListener('resize', this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
@@ -27,13 +27,17 @@ export default class Resize extends React.Component {
   }
 
   render() {
-  	var children = React.Children.map(
-      this.props.children,
-      function(child) {
-        return {child};
-      }
-    );
-    return <div style={{height: this.state.height, width: this.state.width}}>{children}</div>;
-  }
+    let styles = {
+      height: this.state.height,
+      width: this.state.width,
+    }
 
+    return (
+      <div style={styles}>
+        {this.props.children}
+      </div>
+    )
+  }
 }
+
+export default Resize
